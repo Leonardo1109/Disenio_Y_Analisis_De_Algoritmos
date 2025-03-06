@@ -1,0 +1,27 @@
+import random
+
+def get_ganador(usuario, compu):
+    if(usuario == 0 and compu == 2):
+        return('usuario')
+    if(usuario > compu):
+        return('usuario')
+    if(usuario == 2 and compu == 0):
+        return('compu')
+    if (compu > usuario):
+        return('compu')
+    else:
+        return('empate')
+
+opciones = {0:'piedra', 1:'papel', 2:'tijeras'}
+#El usuario da su opcion
+print('0:piedra')
+print('1:papel')
+print('2:tijeras')
+usuario = int(input('Escriba su opcion: '))
+print(usuario)
+compu = random.choice([0,1,2])
+print('Usteded seleccionó: ',opciones[usuario])
+print('La compu seleccionó: ', opciones[compu])
+
+gana = get_ganador(usuario, compu)
+print('Y el ganador es: ', gana)

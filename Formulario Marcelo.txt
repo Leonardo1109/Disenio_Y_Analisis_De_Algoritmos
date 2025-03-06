@@ -1,0 +1,70 @@
+DETERMINAR SIEMPRE EL TIEMPO DE SALIDA CON DISTINTOS N (algoritmo de ORDEN)
+
+O(1) Numero fijo de operaciones | No recorrer listas para obtener un dato | Tiempo ejecución constante | Pila
+O(log_2(n)) Biparticion | Mientras mas crecen a la inversa que un n^2 | Busqueda arbol binario
+O(n) Iteración lineal | Operaciones que crecen con n | Recorrer un arreglo | Sacar de una cola
+O(nlog(n)) Ordenar o crear arbol binario | Quicksort (ordenar por pivote y despues 2 pivotes y despues 4...)
+O(n^2) Bucles anidados | Operaciones que dependen de n dentro de un bucle
+O(2^n) Todas las combinaciones posibles | Problema de knapsack
+O(n!) Cifrado por llave alfabetica sustituida | Operaciones exponenciales | Problema viajero
+
+.enumerate() enumera los elementos
+.randint(a,b) random int
+.find(x) encuentra a x
+.index() indice 
+.capitalize() primera letra mayuscula
+.upper() mayusculas
+.lower() minusculas
+4%2 = 0 - resto de una divición (lo que sobra)
+.split(" ") separa una cadena con lo que haya adentro, por defecto espacios
+.sort() #ordena alfabeticamente la lista de palabras
+.sorted() ordena pero crea una nueva lista
+.append meter a una lista
+set(x) elimina elementos en un conjunto
+list() convierte algo en una lista
+.zfill(n) rellena de 0 una cadena (n es el largo con el que debe terminar la cadena, si ponemos 5 en 42 = 00042)
+
+archivo = open('prueba.txt', 'w')
+# w = crea o sobreescribe y despues abre
+# wb lo mismo pero binario
+# r abre para lectura; marca error si no existe
+# rb abre para lectura binario
+# a abre para añadir
+
+archivo.read - .readline 
+archivo.write('linea 1') # no existe salto de linea, hay que ponerlo manual
+archivo.close()
+
+frecuencias = {} diccionario
+frecuencias [c] = 0 c es la clave
+del frecuencias[c] eliminar
+
+slicing
+# a[8:3:-2] 1° es donde empezamos, 2° donde termina la cadena, 3° saltos
+# cad[::-1] empieza en 0, termina en leng, va saltando hacia atras
+
+class Objeto:
+    def __init__(self, nombre, precio, peso): init constructor
+        self.nombre = nombre
+        self.precio = precio
+        self.peso = peso
+
+cosas = []
+cosas.append(Objeto('libro', 4, 1))
+cosas.append(Objeto('laptop', 200, 4))
+cosas.append(Objeto('lampara', 10, 8))
+del cosas[1]
+cosas.remove("libro")
+
+Todos los problemas que se pueden resolver en la computadora son: (P)
+O(1)
+O(log_2(n))
+O(n)
+O(nlog(n))
+O(n^2) 
+# Apartir de aqui ya no son tan viables porque son muy caros
+# Solo podemos resolver problemas con n >= 30 (NP)
+O(2^n)
+O(n!)
+
+for c in range (1, n+1): c tomara valores de 1 a n+1
